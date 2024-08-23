@@ -19,8 +19,6 @@ async function bootstrap() {
   app.useGlobalFilters(new RpcCustomExceptionFilter());
   await app.listen(env.PORT);
 
-  console.log("hola mundo")
-
   logger.log('Gateway running on port ' + env.PORT);
 }
 bootstrap();
